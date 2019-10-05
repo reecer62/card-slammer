@@ -1,0 +1,19 @@
+{
+  "name": "cardslammer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reecer62/card-slammer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reecer62/card-slammer/issues"
+  },
+  "homepage": "https://github.com/reecer62/card-slammer#readme"
+}
