@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/reecer62/card-slammer#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "standard": "^14.3.1"
   }
 }
