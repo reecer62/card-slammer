@@ -2,7 +2,7 @@
   "name": "cardslammer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/reecer62/card-slammer/issues"
   },
-  "homepage": "https://github.com/reecer62/card-slammer#readme"
+  "homepage": "https://github.com/reecer62/card-slammer#readme",
+  "dependencies": {
+    "standard": "^14.3.1"
+  }
 }
