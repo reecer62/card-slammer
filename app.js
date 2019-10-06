@@ -49,7 +49,6 @@ app.post('/', function (req, res) {
     })
     xhr.open('GET', `https://api.tcgplayer.com/v1.9.0/pricing/product/${cardId}`, false)
     xhr.setRequestHeader('Authorization', `Bearer ${config.bearer}`)
-    xhr.setRequestHeader('Connection', 'keep-alive')
     xhr.send(data)
   })
   res.send(JSON.stringify(cardAggregate))
