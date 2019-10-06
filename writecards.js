@@ -5,7 +5,10 @@ const cards = JSON.parse(cardData)
 
 const cardList = {}
 cards.forEach(card => {
-    cardList[card.productName] = card.productId
+    cardList[card.productName] =  {
+        id: card.productId,
+        img: card.image
+    }
 })
 
 fs.writeFileSync('cardData.json', JSON.stringify(cardList), (err) => {

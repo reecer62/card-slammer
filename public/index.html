@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,5 +15,62 @@
         <input type="text" id="cardName">
     </div>
     <button id="submitBtn">Submit</button>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card$lammer</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body class="bg">
+        <div class="topnav">
+            <a href="http://www.google.com"><div><img class="homebutton" src="images/Card_Slammer_Logo.svg"></div></a>
+        </div>
+        <div class="gradient"></div>
+        <div>
+            <img class="logo-slogan" src="images/Card_Slammer_Logo_Silver.svg">
+            <p class="slogan">Best cards. Best prices.</p>
+        </div>
+        <div class="search-box">
+            <div class="search-box-title">
+                <p class="search-box-title-text">Search for Cards</p>
+            </div>
+            <div class="search-box-tcg">
+                <select class="search-box-tcg-dropdown">
+                    <option value="none">Select TCG</option>
+                    <option value="magic">Magic The Gathering</option>
+                    <option value="pokemon">Pokémon</option>
+                    <option value="yugioh">Yu-Gi-Oh!</option>
+                </select>
+            </div>
+            <div class="search-box-retail">
+                <input type="checkbox" name="TCGPlayer" value="tcgplayer"><p class="check">TCGPlayer</p><br>
+                <input type="checkbox" name="eBay" value="ebay"><p class="check">eBay</p><br>
+                <input type="checkbox" name="Amazon" value="amazon"><p class="check">Amazon</p><br>
+            </div>
+            <div class="search-box-cardlist">
+                <p class="search-box-cardlist-title">Card List</p>
+                <div id="box" class="search-box-cardlist-box">
+                        
+                </div>
+                <div class="search-box-cardlist-input">
+                    <input id="number" class="number" type="text" placeholder="#">
+                    <input id="name" class="cardname" type="text" placeholder="Name of Card">
+                    <button class="add" onclick="addCard()">+</button>
+                </div>
+            </div>
+            <button class="submit" id="submitBtn">Submit</button>
+        </div>
+        
+        <div class="search-results" id="results">
+            <div class="search-results-title">
+                <p class="search-results-title-text">Your Search Results</p>
+            </div>
+        </div>
 </body>
 </html>

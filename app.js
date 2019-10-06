@@ -28,6 +28,7 @@ app.post('/', function (req, res) {
     const setId = getSetId(setName)
     const cardName = parseCardName(card.name)
     const cardId = getCardId(cardName)
+    const cardImg = getCardImg(cardName)
 
     // get each card's info
     const data = null
@@ -38,6 +39,9 @@ app.post('/', function (req, res) {
         const cardResponse = JSON.parse(this.responseText).results
         cardResponse.forEach(cardResponse => {
           if (cardResponse.subTypeName === 'Normal') {
+            cardResponse.set = setName
+            cardResponse.name = cardName
+            cardResponse.img = cardImg
             cardAggregate.push(cardResponse)
           }
         })
@@ -68,7 +72,11 @@ function getSetId (setName) {
 }
 
 function getCardId (cardName) {
-  return cards[cardName]
+  return cards[cardName].id
+}
+
+function getCardImg (cardName) {
+  return cards[cardName].img
 }
 
 app.listen(port, () => {
