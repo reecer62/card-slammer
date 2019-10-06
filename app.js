@@ -39,7 +39,7 @@ app.post('/', function (req, res) {
         const cardResponse = JSON.parse(this.responseText).results
         cardResponse.forEach(cardResponse => {
           if (cardResponse.subTypeName === 'Normal') {
-            cardResponse.set = setName
+            cardResponse.set = setId
             cardResponse.name = cardName
             cardResponse.img = cardImg
             cardAggregate.push(cardResponse)
@@ -65,7 +65,7 @@ function parseCardName (cardName) {
 function getSetId (setName) {
   for (let i = 0; i < sets.length; i++) {
     if (sets[i].abbreviation === setName) {
-      return sets[i].groupId
+      return sets[i].name
     }
   }
   console.log('Did not find set id.')
